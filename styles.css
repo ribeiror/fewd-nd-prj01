@@ -1,4 +1,205 @@
-/* TODO: remove this style applied for testing purpose */
+/* for testing purpose */
+/*
 * {
-	outline: 1px solid red !important;
+	outline: 1px solid green !important;
+}
+/*
+
+/*
+	correspond to the first level container
+	identified by a background color gray,
+	The color were choosen analyzing the pdf
+	file 'design-mockup-portfolio.pdf' using
+	a color detector tool called 'Gpick'
+*/
+body {
+	background-color: #f2f2f0;
+	margin: 0;
+}
+
+/*
+	correspond to the second level container
+	identified by a central area with a
+	background color white
+*/
+main {
+	margin: 5px 300px 5px 300px;
+	background-color: white;
+}
+
+/*
+	correspond to the third level container
+	identified as a wrapper for the three
+	section areas: 'header', 'main work', and
+	'featured work'
+*/
+.content {
+	margin: 0 70px 0 70px;
+}
+
+/*
+	correspond to the top area identified by a
+	logo on the left and a title and subtitle
+	on the right
+*/
+header {
+	padding-top: 25px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #bcbbbb;
+}
+
+/*
+	styles for the logo as a text, correspond
+	to a letter 'U' surrounded by a solid
+	border aligned center
+ */
+.logo-txt {
+	font: bold 50px/70px Unna;
+	width: 70px;
+	text-align: center;
+	color: #f8981c;
+	border: 7px solid #f8981c;
+	border-radius: 50%;
+	margin: 0;
+	display: inline-block;
+}
+
+/*
+	styles for the logo as an image
+*/
+.logo-img {
+	max-height: 100%;
+	width: 15%;
+	border: 7px solid #f8981c;
+	border-radius: 50%;
+}
+
+/*
+	styles in common with title and subtitle
+*/
+.titles {
+	float: right;
+	text-align: right;
+	color: #747704;
+}
+
+/*
+	specific style for title like font family
+	font size and margin respect to the div box.
+	Font family was obtained from web site
+	http://fonts.googleapis.com/css?family=Gruppo
+*/
+.title {
+	font: normal 36px Gruppo;
+	margin: 10px 0 0 0;
+}
+
+/*
+	specific style for subtitle like font family
+	size and weight.
+*/
+.subtitle {
+	font: bold 14px Arial, Helvetica, sans-serif;
+}
+
+/*
+	correspond to the central area which act as a
+	container for the html image. A margin top and
+	bottom are stablished to separate a little
+	bit from header and bottom section.
+*/
+.mainwork {
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+/*
+	fit the image within the container
+*/
+.mainwork-img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*
+	correspond to the bottom area which act as a
+	container for a title, three images and their
+	descriptions
+*/
+.featwork {
+}
+
+/* 	specific style for the title in the bottom of
+	the page
+*/
+.featwork-title {
+	font: normal 20px Play;
+	color: #bbbab9;
+	margin: 30px 0 10xp 0;
+}
+
+/*
+	represent the container for three images and
+	their descriptions, i found an interesting article
+	about distributing horizontally the images in their
+	left, center and right alignment.
+	here is the link:
+	https://css-tricks.com/equidistant-objects-with-css/
+*/
+.featwork-boxes-wrapper {
+	width: 100%;
+	text-align: justify;
+}
+
+/*
+	represent the container for every image and it's
+	description.
+*/
+.featwork-box {
+	width: 30%;
+	display: inline-block;
+}
+
+/*
+	https://css-tricks.com/equidistant-objects-with-css/
+*/
+.featwork-boxes-wrapper:after {
+	content: '';
+	width: 100%;
+	display: inline-block;
+}
+
+/*
+	fit image respect to the box
+	'feature works'
+*/
+.featwork-img {
+	max-width: 100%;
+}
+
+/*
+	common styles between the texts inside the
+	boxes 'feature works'
+*/
+.featwork-box-text {
+	text-align: center;
+	color: #5d614e;
+}
+
+/*
+	styles for the main text inside the boxes
+	'feature works'
+*/
+.featwork-name {
+	font: normal 20px Aldrich;
+	margin: 5px 0 0 0;
+}
+
+/*
+	styles for the secundary text inside the boxes
+	'feature works'
+*/
+.featwork-url {
+	font: normal 12px Marvel;
+	margin: 0;
 }

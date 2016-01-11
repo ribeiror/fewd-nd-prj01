@@ -4,8 +4,63 @@
 		<meta charset="utf-8">
 		<title>P1: Build a Portfolio Site</title>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Unna" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gruppo" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Aldrich" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Marvel" />
 	</head>
 	<body>
-
+		<main>
+			<!--
+				page is breakdown into three sections. Semantically known as header,
+				section (work) and section (featured work)
+			-->
+			<section class="content">
+				<!--
+					section reserved to place a logo, title and subtitle,
+					the main purpose for header tag is act as a container
+					and wrap an image, title and subtibles in their own
+				div-->
+				<header>
+					<img class="logo-img" src="http://cameronwp.github.io/cpcom/static/udacity_logo.svg" alt="logo">
+					<!--<p class="logo-txt">U</p>-->
+					<div class="titles">
+						<h1 class="title">JANE DOETTE</h1>
+						<h2 class="subtitle">FRONT-END NINJA</h2>
+					</div>
+				</header>
+				<!--
+					main area known as 'mainwork', contain an image covering all the area
+				-->
+				<section class="mainwork">
+					<img class="mainwork-img" src="images/html.png" alt="main work">
+				</section>
+				<!--
+					footer area known as 'featwork', contains three boxes each one
+					with an image, a description and an url
+				-->
+				<section class="featwork">
+					<p class="featwork-title">Featured Work</p>
+					<div class="featwork-boxes-wrapper">
+						<div class="featwork-box">
+							<img class="featwork-img" src="images/appify.png" alt="appify">
+							<p class="featwork-box-text featwork-name">APPIFY</p>
+							<p class="featwork-box-text featwork-url">https://github.com/udacity/Appify/</p>
+						</div>
+						<div class="featwork-box">
+							<img class="featwork-box-text featwork-img" src="images/sunflower.png" alt="sunflower">
+							<p class="featwork-box-text featwork-name">SUNFLOWER</p>
+							<p class="featwork-box-text featwork-url">https://github.com/udacity/Sunflower/</p>
+						</div>
+						<div class="featwork-box">
+							<img class="featwork-img" src="images/bokeh.png" alt="bokeh">
+							<p class="featwork-box-text featwork-name">BOKEH</p>
+							<p class="featwork-box-text featwork-url">https://github.com/udacity/Bokeh/</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
 	</body>
 </html>
